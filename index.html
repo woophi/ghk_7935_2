@@ -598,7 +598,7 @@
       Торгуйте своим темпом — с ним или без него, как удобнее.</p>
     <p style="font-size:12px; color:rgba(255,255,255,0.35); margin-bottom:32px;">Это не активирует функцию прямо сейчас
     </p>
-    <button data-track="success-close" onclick="closeWebView()"
+    <button data-track="success-close"
       style="width:100%; max-width:320px; padding:14px 24px; background:transparent; border:1px solid rgba(255,255,255,0.3); border-radius:12px; color:#fff; font-size:16px; font-weight:600; cursor:pointer;">Понятно</button>
     <p id="bridge-fallback" style="display:none; margin-top:16px; font-size:13px; color:rgba(255,255,255,0.4);">Нажмите
       "Назад", чтобы вернуться</p>
@@ -856,6 +856,7 @@
               dimension_1: Math.round((Date.now() - _successShownAt) / 1000)
             });
             _ctaClicked = true;
+            window.location.href = 'alfabank://';
           });
         }
       });
